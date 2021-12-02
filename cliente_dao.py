@@ -8,20 +8,26 @@ lista_clientes = []
 def adicionar(novo_cliente):
     lista_clientes.append(novo_cliente)
 
-#editar cliente
-def edit():
-    pass
-
-#excluir liste
-def delete():
-    pass
-
-#listar todos os cliente
-def listaAll():
+#pega um cliente pelo ID
+def getCliente(id)
     for c in lista_clientes:
-        c.print()
+        if c.id == id.
+              return c #return - retornar retornando o objeto definido
 
-
-#pegar um clilente especifico
-def lista_cliente():
+#Editar cliente - dado um objeto cliente, buscarna
+#lista atraves do seu id e atualiza-lo
+def editar(cliente):
     pass
+
+#Excluir cliente dado o id do cliente remove-lo da lista
+def excluir(id cliente):
+    pass
+   
+#lista todos os clientes
+def listar_todos():
+    #passa por todos os clientes da listae
+    #chama a função imprime() desses objetos
+    for cliente in lista_clientes
+    cliente.imprime()
+
+#listar um cliente especifico

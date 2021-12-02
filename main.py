@@ -8,8 +8,11 @@ from model.cliente import Cliente
 import model.cliente_dao as funcoes clientes
 
 #adiciona varios clientes
-for i in range(0, 15):
-    novo_cliente = Cliente(0, f'Cliente{i}' , 'rua a', '75 9 8888888')
+for i in range(0, 5):
+    novo_cliente = Cliente(i, f'Cliente{i}' , 'rua a', '75 9 8888888')
     funcoes_clientes.adicionar(novo_cliente)
-
+    
 funcoes_clientes.listas_todos()
+
+id_cliente = int(input("Digite o ID do cliente que deseja excluir: "))
+funcoes_clientes.excluir(id_cliente)
